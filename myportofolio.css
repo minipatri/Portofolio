@@ -1,0 +1,180 @@
+/* Styling for the gradient container */
+#gradient {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  padding: 0px;
+  margin: 0px;
+  position: relative; /* Ensure correct positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+/* Body styling */
+body {
+  background-color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Title styling */
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+  margin: 0; /* Remove any extra margins */
+}
+
+-------------------------------------------------
+
+  /* Styling pentru containerul gradient */
+#gradient {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Aranjează conținutul pe verticală */
+  align-items: center; /* Centrează titlul și div-urile pe orizontală */
+  z-index: 0;
+}
+
+/* Poziționarea titlului */
+.titlu {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Stil pentru div-urile colorate */
+.color-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 20px; /* Colțuri rotunde */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+/* Container for color divs aligned horizontally */
+.color-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: nowrap;
+  margin-top: 20px; /* Adjust the spacing under the title */
+}
+
+/* Styling for the images inside color-box */
+.color-box img {
+  width: 100px; /* Adjust this based on desired size */
+  height: auto;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  display: none; /* Hide the image by default */
+}
+
+.color-box.pastel-pink:hover img {
+  display: block; /* Show image on hover */
+  width: 100%;
+  transition: transform 0.3a ease-in-out;
+  transform: scale(1.2);
+}
+
+.color-box.pastel-purple:hover img {
+  display: block; /* Show image on hover */
+  width: 100%;
+  transition: transform 0.3a ease-in-out;
+  transform: scale(1.2);
+}
+
+.color-box.pastel-blue:hover img {
+  display: block; /* Show image on hover */
+  width: 100%;
+  transition: transform 0.3a ease-in-out;
+  transform: scale(1.2);
+}
+.color-box.pastel-darkblue:hover img{
+  display: block;
+  width: 100%;
+  transition: transform 0.3a ease-in-out;
+  transform: scale(1.2);
+}
+.color-box.pastel-mediumblue:hover img{
+  display: block;
+  width: 100%;
+  transition: transform 0.3a ease-in-out;
+  transform: scale(1.2);
+}
+
+.color-box.pastel-lightblue:hover img{
+  display: block;
+  width: 100%;
+  transition: transform 0.3a ease-in-out;
+  transform: scale(1.2);
+}
+.pastel-pink {
+  background-color: #fdcfe8;
+}
+
+.pastel-purple {
+  background-color: #e0bbe4;
+}
+
+.pastel-blue {
+  background-color: #a9def9;
+}
+
+.pastel-darkblue{
+  background-color: #5D7B9E;
+}
+
+.pastel-mediumblue{
+  background-color: #6A8DB5;
+}
+
+.pastel-lightblue{
+  background-color: #4C9DFA;
+}
+
+/* Adjust hover scaling and display image on hover */
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+/* Ensuring the image is centered inside the div */
+.color-box .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.color-container2{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+  margin-top: 20px;
+  padding-top: 80px;
+}
+
